@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "G:\\.NET C#\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|solutionrelative:project\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|solutionrelative:project\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\controllers\\newslistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|solutionrelative:project\\controllers\\newslistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|solutionrelative:project\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|solutionrelative:project\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\models\\newslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|solutionrelative:project\\models\\newslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|solutionrelative:project\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\controllers\\newslistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|solutionrelative:project\\controllers\\newslistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|solutionrelative:project\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|solutionrelative:project\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3EC34790-B286-459F-802B-C55486555156}|Project\\Project.csproj|g:\\.net c#\\project\\project\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,23 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NewsListController.cs",
-              "DocumentMoniker": "G:\\.NET C#\\Project\\Project\\Controllers\\NewsListController.cs",
-              "RelativeDocumentMoniker": "Project\\Controllers\\NewsListController.cs",
-              "ToolTip": "G:\\.NET C#\\Project\\Project\\Controllers\\NewsListController.cs",
-              "RelativeToolTip": "Project\\Controllers\\NewsListController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAswEwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\.NET C#\\Project\\Project\\Program.cs",
+              "RelativeDocumentMoniker": "Project\\Program.cs",
+              "ToolTip": "G:\\.NET C#\\Project\\Project\\Program.cs",
+              "RelativeToolTip": "Project\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T07:11:31.562Z"
+              "WhenOpened": "2025-02-25T03:05:22.386Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "G:\\.NET C#\\Project\\Project\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Project\\Controllers\\CustomerController.cs",
@@ -66,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "G:\\.NET C#\\Project\\Project\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Project\\Data\\AppDbContext.cs",
@@ -78,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Customer.cs",
               "DocumentMoniker": "G:\\.NET C#\\Project\\Project\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Project\\Models\\Customer.cs",
@@ -90,16 +95,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "News.cs",
               "DocumentMoniker": "G:\\.NET C#\\Project\\Project\\Models\\News.cs",
               "RelativeDocumentMoniker": "Project\\Models\\News.cs",
               "ToolTip": "G:\\.NET C#\\Project\\Project\\Models\\News.cs",
               "RelativeToolTip": "Project\\Models\\News.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAIwFMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T05:44:11.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T05:44:11.357Z"
             },
             {
               "$type": "Document",
@@ -109,13 +113,14 @@
               "RelativeDocumentMoniker": "Project\\Controllers\\NewsController.cs",
               "ToolTip": "G:\\.NET C#\\Project\\Project\\Controllers\\NewsController.cs",
               "RelativeToolTip": "Project\\Controllers\\NewsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T05:43:28.831Z"
+              "WhenOpened": "2025-02-24T05:43:28.831Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "NewsList.cs",
               "DocumentMoniker": "G:\\.NET C#\\Project\\Project\\Models\\NewsList.cs",
               "RelativeDocumentMoniker": "Project\\Models\\NewsList.cs",
@@ -124,6 +129,18 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T07:08:18.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NewsListController.cs",
+              "DocumentMoniker": "G:\\.NET C#\\Project\\Project\\Controllers\\NewsListController.cs",
+              "RelativeDocumentMoniker": "Project\\Controllers\\NewsListController.cs",
+              "ToolTip": "G:\\.NET C#\\Project\\Project\\Controllers\\NewsListController.cs",
+              "RelativeToolTip": "Project\\Controllers\\NewsListController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAswEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T07:11:31.562Z"
             }
           ]
         }

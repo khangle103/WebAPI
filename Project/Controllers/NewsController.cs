@@ -20,41 +20,46 @@ namespace Project.Controllers
             _context = context;
         }
 
+        // ✅ API lấy danh sách tin tức (Trả về { articles: [...] } để phù hợp với frontend)
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<News>>> GetNews()
+        public async Task<IActionResult> GetNews()
         {
-            return Ok(await _context.News.Where(n => !n.IsDeleted).ToListAsync());
+            var newsList = await _context.News
+                .Where(n => !n.IsDeleted)
+                .OrderByDescending(n => n.CreatedDate)
+                .ToListAsync();
+
+            return Ok(new { articles = newsList });
         }
 
+        // ✅ API lấy chi tiết tin tức theo ID
         [HttpGet("{id}")]
-        public async Task<ActionResult<News>> GetNews(Guid id)
+        public async Task<IActionResult> GetNews(Guid id)
         {
-            var news = await _context.News.FirstOrDefaultAsync(n => n.Id == id && !n.IsDeleted);
-            if (news == null) return NotFound();
+            var news = await _context.News
+                .FirstOrDefaultAsync(n => n.Id == id && !n.IsDeleted);
+
+            if (news == null) return NotFound(new { message = "Tin tức không tồn tại" });
+
             return Ok(news);
         }
 
+        // ✅ API thêm tin tức mới
         [HttpPost]
         public async Task<IActionResult> PostNews([FromBody] News news)
         {
-            if (news == null)
-            {
-                return BadRequest("News data is null");
-            }
+            if (news == null) return BadRequest(new { message = "Dữ liệu không hợp lệ" });
 
             if (string.IsNullOrWhiteSpace(news.NewsType) || news.NewsType.Length > 30)
-            {
-                return BadRequest("NewsType is required and must be at most 30 characters.");
-            }
+                return BadRequest(new { message = "NewsType phải có tối đa 30 ký tự." });
 
             if (string.IsNullOrWhiteSpace(news.NewsStatus) || news.NewsStatus.Length > 30)
-            {
-                return BadRequest("NewsStatus is required and must be at most 30 characters.");
-            }
+                return BadRequest(new { message = "NewsStatus phải có tối đa 30 ký tự." });
 
             news.Id = Guid.NewGuid();
             news.CreatedDate = DateTime.UtcNow;
             news.IsActive = true;
+            news.IsDeleted = false;
 
             _context.News.Add(news);
             await _context.SaveChangesAsync();
@@ -62,45 +67,45 @@ namespace Project.Controllers
             return CreatedAtAction(nameof(GetNews), new { id = news.Id }, news);
         }
 
+        // ✅ API cập nhật tin tức
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutNews(Guid id, News news)
+        public async Task<IActionResult> PutNews(Guid id, [FromBody] News updatedNews)
         {
-            if (id != news.Id) return BadRequest("ID mismatch");
+            if (id != updatedNews.Id) return BadRequest(new { message = "ID không khớp" });
 
-            news.ModifiedDate = DateTime.UtcNow;
-            _context.Entry(news).State = EntityState.Modified;
+            var existingNews = await _context.News.FindAsync(id);
+            if (existingNews == null) return NotFound(new { message = "Tin tức không tồn tại" });
+
+            // Giữ lại dữ liệu cũ, chỉ cập nhật trường thay đổi
+            existingNews.Title = updatedNews.Title;
+            existingNews.Content = updatedNews.Content;
+            existingNews.NewsType = updatedNews.NewsType;
+            existingNews.NewsStatus = updatedNews.NewsStatus;
+            existingNews.ModifiedDate = DateTime.UtcNow;
 
             try
             {
                 await _context.SaveChangesAsync();
+                return Ok(new { message = "Cập nhật thành công" });
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!NewsExists(id)) return NotFound();
-                throw;
+                return StatusCode(500, new { message = "Lỗi trong quá trình cập nhật" });
             }
-
-            return NoContent();
         }
 
+        // ✅ API xoá tin tức (Chỉ đánh dấu xoá, không xoá thật)
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteNews(Guid id)
         {
             var news = await _context.News.FindAsync(id);
-            if (news == null) return NotFound();
+            if (news == null) return NotFound(new { message = "Tin tức không tồn tại" });
 
             news.IsDeleted = true;
             news.DeletedDate = DateTime.UtcNow;
 
-            _context.Entry(news).State = EntityState.Modified;
             await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
-
-        private bool NewsExists(Guid id)
-        {
-            return _context.News.Any(e => e.Id == id);
+            return Ok(new { message = "Đã xoá tin tức" });
         }
     }
 }

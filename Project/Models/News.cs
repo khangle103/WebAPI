@@ -75,7 +75,7 @@ namespace Project.Models
 
         [Column("news_status")]
         [MaxLength(30)]
-        public string NewsStatus { get; set; } // Chỉnh lại kiểu dữ liệu
+        public string? NewsStatus { get; set; } // Chỉnh lại kiểu dữ liệu
 
         [Column("views")]
         public int Views { get; set; } = 0;
